@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788" systemVersion="24F74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CropEntity" representedClassName="CropEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="variety" optional="YES" attributeType="String"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExpenseEntity" inverseName="crop" inverseEntity="ExpenseEntity"/>
+        <relationship name="field" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FieldEntity" inverseName="crops" inverseEntity="FieldEntity"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TaskEntity" inverseName="crop" inverseEntity="TaskEntity"/>
+    </entity>
+    <entity name="ExpenseEntity" representedClassName="ExpenseEntity" syncable="YES">
+        <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="769626180" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="crop" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CropEntity" inverseName="expenses" inverseEntity="CropEntity"/>
+        <relationship name="farm" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FarmEntity" inverseName="expenses" inverseEntity="FarmEntity"/>
+        <relationship name="field" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FieldEntity" inverseName="expenses" inverseEntity="FieldEntity"/>
+    </entity>
+    <entity name="FarmEntity" representedClassName="FarmEntity" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExpenseEntity" inverseName="farm" inverseEntity="ExpenseEntity"/>
+        <relationship name="fields" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FieldEntity" inverseName="farm" inverseEntity="FieldEntity"/>
+        <fetchedProperty name="fetchedProperty" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="FarmEntity"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="FieldEntity" representedClassName="FieldEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="crops" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CropEntity" inverseName="field" inverseEntity="CropEntity"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExpenseEntity" inverseName="field" inverseEntity="ExpenseEntity"/>
+        <relationship name="farm" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FarmEntity" inverseName="fields" inverseEntity="FarmEntity"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TaskEntity" inverseName="field" inverseEntity="TaskEntity"/>
+    </entity>
+    <entity name="InventoryItem" representedClassName="InventoryItem" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" defaultDateTimeInterval="801161640" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="quantity" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TaskEntity" representedClassName="TaskEntity" syncable="YES">
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="crop" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CropEntity" inverseName="tasks" inverseEntity="CropEntity"/>
+        <relationship name="field" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FieldEntity" inverseName="tasks" inverseEntity="FieldEntity"/>
+    </entity>
+</model>

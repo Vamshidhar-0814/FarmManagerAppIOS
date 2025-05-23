@@ -1,17 +1,18 @@
-//
-//  FarmManagerApp.swift
-//  FarmManager
-//
-//  Created by Vamshidhar Reddy on 21/05/25.
-//
-
 import SwiftUI
+import Foundation
 
 @main
-struct FarmManagerApp: App {
+struct FarmApp: App {
+    let persistenceController = PersistenceController.shared
+
     var body: some Scene {
+        let context = persistenceController.container.viewContext
+        let farmStore = FarmStore(context: context)
+
         WindowGroup {
-            ContentView()
+            MainTabView()
+                .environment(\.managedObjectContext, context)
+                .environmentObject(farmStore) // ✅ Inject into environment
         }
     }
 }

@@ -6,6 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9669815E2DDE4E42008A5D21 /* FarmEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669815C2DDE4E42008A5D21 /* FarmEntity+CoreDataClass.swift */; };
+		9669815F2DDE4E42008A5D21 /* FarmEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669815D2DDE4E42008A5D21 /* FarmEntity+CoreDataProperties.swift */; };
+		966981642DDE4F0B008A5D21 /* CropEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966981612DDE4F0B008A5D21 /* CropEntity+CoreDataProperties.swift */; };
+		966981652DDE4F0B008A5D21 /* CropEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966981602DDE4F0B008A5D21 /* CropEntity+CoreDataClass.swift */; };
+		966981662DDE4F0B008A5D21 /* FieldEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966981622DDE4F0B008A5D21 /* FieldEntity+CoreDataClass.swift */; };
+		966981672DDE4F0B008A5D21 /* FieldEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966981632DDE4F0B008A5D21 /* FieldEntity+CoreDataProperties.swift */; };
+		966981702DDF803A008A5D21 /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669816E2DDF803A008A5D21 /* TaskEntity+CoreDataClass.swift */; };
+		966981712DDF803A008A5D21 /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669816F2DDF803A008A5D21 /* TaskEntity+CoreDataProperties.swift */; };
+		9669817E2DDF8EAA008A5D21 /* InventoryItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669817C2DDF8EAA008A5D21 /* InventoryItem+CoreDataClass.swift */; };
+		9669817F2DDF8EAA008A5D21 /* InventoryItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669817D2DDF8EAA008A5D21 /* InventoryItem+CoreDataProperties.swift */; };
+		966981812DDF8ECE008A5D21 /* AddInventoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966981802DDF8ECE008A5D21 /* AddInventoryItemView.swift */; };
+		966981882DDF9186008A5D21 /* ExpenseEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966981862DDF9186008A5D21 /* ExpenseEntity+CoreDataClass.swift */; };
+		966981892DDF9186008A5D21 /* ExpenseEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966981872DDF9186008A5D21 /* ExpenseEntity+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		96D74B5E2DDD9E0B006A28AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,14 +40,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9669815C2DDE4E42008A5D21 /* FarmEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FarmEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9669815D2DDE4E42008A5D21 /* FarmEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FarmEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		966981602DDE4F0B008A5D21 /* CropEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CropEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		966981612DDE4F0B008A5D21 /* CropEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CropEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		966981622DDE4F0B008A5D21 /* FieldEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FieldEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		966981632DDE4F0B008A5D21 /* FieldEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FieldEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9669816E2DDF803A008A5D21 /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9669816F2DDF803A008A5D21 /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9669817C2DDF8EAA008A5D21 /* InventoryItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9669817D2DDF8EAA008A5D21 /* InventoryItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		966981802DDF8ECE008A5D21 /* AddInventoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInventoryItemView.swift; sourceTree = "<group>"; };
+		966981862DDF9186008A5D21 /* ExpenseEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpenseEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		966981872DDF9186008A5D21 /* ExpenseEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpenseEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		96D74B502DDD9E09006A28AF /* FarmManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D74B5D2DDD9E0B006A28AF /* FarmManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D74B672DDD9E0B006A28AF /* FarmManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		96D74B902DDDA902006A28AF /* Exceptions for "FarmManager" folder in "FarmManagerUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FarmStore.swift,
+			);
+			target = 96D74B662DDD9E0B006A28AF /* FarmManagerUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		96D74B522DDD9E09006A28AF /* FarmManager */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				96D74B902DDDA902006A28AF /* Exceptions for "FarmManager" folder in "FarmManagerUITests" target */,
+			);
 			path = FarmManager;
 			sourceTree = "<group>";
 		};
@@ -75,6 +117,19 @@
 		96D74B472DDD9E09006A28AF = {
 			isa = PBXGroup;
 			children = (
+				966981862DDF9186008A5D21 /* ExpenseEntity+CoreDataClass.swift */,
+				966981872DDF9186008A5D21 /* ExpenseEntity+CoreDataProperties.swift */,
+				9669817C2DDF8EAA008A5D21 /* InventoryItem+CoreDataClass.swift */,
+				9669817D2DDF8EAA008A5D21 /* InventoryItem+CoreDataProperties.swift */,
+				966981802DDF8ECE008A5D21 /* AddInventoryItemView.swift */,
+				9669816E2DDF803A008A5D21 /* TaskEntity+CoreDataClass.swift */,
+				9669816F2DDF803A008A5D21 /* TaskEntity+CoreDataProperties.swift */,
+				966981602DDE4F0B008A5D21 /* CropEntity+CoreDataClass.swift */,
+				966981612DDE4F0B008A5D21 /* CropEntity+CoreDataProperties.swift */,
+				966981622DDE4F0B008A5D21 /* FieldEntity+CoreDataClass.swift */,
+				966981632DDE4F0B008A5D21 /* FieldEntity+CoreDataProperties.swift */,
+				9669815C2DDE4E42008A5D21 /* FarmEntity+CoreDataClass.swift */,
+				9669815D2DDE4E42008A5D21 /* FarmEntity+CoreDataProperties.swift */,
 				96D74B522DDD9E09006A28AF /* FarmManager */,
 				96D74B602DDD9E0B006A28AF /* FarmManagerTests */,
 				96D74B6A2DDD9E0B006A28AF /* FarmManagerUITests */,
@@ -236,6 +291,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9669817E2DDF8EAA008A5D21 /* InventoryItem+CoreDataClass.swift in Sources */,
+				9669817F2DDF8EAA008A5D21 /* InventoryItem+CoreDataProperties.swift in Sources */,
+				966981882DDF9186008A5D21 /* ExpenseEntity+CoreDataClass.swift in Sources */,
+				966981892DDF9186008A5D21 /* ExpenseEntity+CoreDataProperties.swift in Sources */,
+				966981812DDF8ECE008A5D21 /* AddInventoryItemView.swift in Sources */,
+				966981642DDE4F0B008A5D21 /* CropEntity+CoreDataProperties.swift in Sources */,
+				966981652DDE4F0B008A5D21 /* CropEntity+CoreDataClass.swift in Sources */,
+				966981662DDE4F0B008A5D21 /* FieldEntity+CoreDataClass.swift in Sources */,
+				966981672DDE4F0B008A5D21 /* FieldEntity+CoreDataProperties.swift in Sources */,
+				9669815E2DDE4E42008A5D21 /* FarmEntity+CoreDataClass.swift in Sources */,
+				9669815F2DDE4E42008A5D21 /* FarmEntity+CoreDataProperties.swift in Sources */,
+				966981702DDF803A008A5D21 /* TaskEntity+CoreDataClass.swift in Sources */,
+				966981712DDF803A008A5D21 /* TaskEntity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
